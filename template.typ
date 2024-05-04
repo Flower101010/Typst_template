@@ -104,23 +104,26 @@
 
 #let proof = thmproof("proof", "Proof")
 
-#let problem(item,index: "#") =context {
-  let size = measure(item)
- block(
+#let problem(item,index: "#") ={
+  layout(size => [
+  #let (height,) = measure(
+    block(width: size.width, item),
+  )
+  #v(10pt)
+  #block(
       fill: orange.lighten(90%),
-      above:2.2em,
       radius:4pt,
       inset: (x: 8pt, y: 5pt),
       width: 100%,
-      height: size.height + 24pt,
-      spacing: 1.2em,
+      height: height + 23pt,
+      above: 2.2em,
       stroke: 1.5pt + gradient.linear(..color.map.flare),
       breakable: false,
       move(
       dx: 0pt,
       dy: -12.5pt,
       block(
-        fill: rgb("#ffdfbb"),
+        fill: orange.lighten(95%),
         inset: (x: 4pt, y: 4pt),
          stroke: 1pt + orange ,
         height: 15pt,
@@ -131,6 +134,8 @@
       dy: -19pt,
        item,)
      )
+])
+ 
  }
 
 #let theorem = thmbox(
