@@ -84,3 +84,41 @@
 #problem(index: "2")[
   #lorem(100)
 ]
+
+#proof[
+  #lorem(100)
+]
+
+#problem(index: "2")[
+Adding `rbx` to `rcx` gives
+the desired result.
+What is ```rust fn main()``` in Rust
+would be ```c int main()``` in C.
+```rust
+fn main() {
+    println!("Hello World!");
+}
+```
+This has ``` `backticks` ``` in it
+(but the spaces are trimmed). And
+``` here``` the leading space is
+also trimmed.
+]
+
+#problem(index: "999")[
+  In this report, we will explore the
+various factors that influence fluid
+dynamics in glaciers and how they
+contribute to the formation and
+behaviour of these natural structures.
+
+...
+
+#align(center + bottom)[
+  #image("pc.jpg", width: 70%)
+
+  *Glaciers form an important
+  part of the earth's climate
+  system.*
+]
+]
