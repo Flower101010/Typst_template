@@ -1,9 +1,9 @@
 #import "template.typ": *
 #show: doc => conf(
   institute: [University of Mars \ Institute of Intergalactic Travel],
-  auther: [Flower],
+  name: [Flower],
   title: [Linear Maps],
-  class: [Linear Algebar],
+  date: none,
   doc,
 )
 #let L(iTem) = $cal(L)(iT em)$
@@ -22,7 +22,7 @@
 #proof[
   对于任意的 $x in #F^n$，我们可以写
   $
-    x = x_1 e_1 + dots + x_n e_n,
+    x = x_1 e_1 + x_2 e_2+ dots + x_n e_n,
   $
   其中 $e_1,dots,e_n$ 是 $#F^n$ 的标准基. 因为 $T$ 是线性的，我们有
   $
